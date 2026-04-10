@@ -6,7 +6,7 @@
 <title>MISI — AI Marketing Strategy Sprint</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
 <style>
   :root {
     --charcoal: #1a1a1a;
@@ -47,7 +47,7 @@
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.2;
     color: var(--charcoal);
   }
@@ -80,10 +80,25 @@
     align-items: center;
     gap: 14px;
   }
-  .nav-logo svg {
+  .nav-logo img {
     height: 34px;
     width: auto;
     flex-shrink: 0;
+    display: block;
+  }
+  .footer-logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin-bottom: 12px;
+  }
+  .footer-brand img {
+    height: 30px;
+    width: auto;
+    display: block;
   }
   .nav-divider {
     width: 1px;
@@ -516,7 +531,7 @@
   .punch-line::before {
     content: '"';
     font-size: 80px;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: rgba(255,255,255,0.07);
     position: absolute;
     top: -10px; left: 24px;
@@ -800,7 +815,7 @@
     margin-bottom: 8px;
   }
   .pricing-name {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 800;
     color: var(--white);
@@ -812,7 +827,7 @@
     margin-bottom: 28px;
   }
   .pricing-price {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 800;
     color: var(--white);
@@ -940,7 +955,7 @@
     width: 56px; height: 56px;
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 800;
     font-size: 18px;
     margin: 0 auto 20px;
@@ -957,7 +972,7 @@
     border-color: var(--mid-gray);
   }
   .step-title {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 13.5px;
     font-weight: 700;
     color: var(--charcoal);
@@ -1040,7 +1055,7 @@
     margin-bottom: 12px;
   }
   .cert-title {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 13px;
     font-weight: 700;
     color: var(--charcoal);
@@ -1066,7 +1081,7 @@
   }
   .testimonial-card::before {
     content: '"';
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 56px;
     color: var(--teal-muted);
     position: absolute;
@@ -1211,7 +1226,6 @@
     gap: 48px;
     margin-bottom: 48px;
   }
-  .footer-brand svg { height: 30px; margin-bottom: 12px; }
   .footer-descriptor {
     font-size: 12px;
     color: rgba(255,255,255,0.35);
@@ -1309,21 +1323,14 @@
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">
-      <!-- MISI Logo SVG Recreation -->
-      <svg viewBox="0 0 180 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="44" font-family="'Syne', sans-serif" font-weight="800" font-size="52" fill="#1a1a1a" letter-spacing="-2">MIS</text>
-        <rect x="156" y="4" width="22" height="22" rx="0" fill="#3dce6a"/>
-        <rect x="156" y="4" width="22" height="22" rx="0" fill="#3dce6a" transform="rotate(0 156 4)"/>
-        <!-- i dot (green square) + i stem -->
-        <rect x="161" y="0" width="14" height="14" fill="#3dce6a"/>
-        <rect x="162" y="18" width="12" height="32" fill="#1a1a1a" rx="1"/>
-      </svg>
+      <!-- MISI final logo asset -->
+      <img src="misi-logo-final.png" alt="MISI logo">
       <div class="nav-divider"></div>
       <div class="nav-descriptor">Advisory, Mentoring &amp; Training for Business Owners</div>
     </div>
     <div class="nav-cta">
       <a href="#pricing" class="btn-ghost btn-sm">Lihat Harga</a>
-      <a href="#cta" class="btn-primary btn-sm">Saya Mau Sprint Saya</a>
+      <a href="#cta" class="btn-primary btn-sm">Saya Mau Sprint 3 Hari Saya</a>
     </div>
   </div>
 </nav>
@@ -1332,16 +1339,16 @@
 <section class="hero" id="hero">
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-badge">MISI AI Marketing Strategy Sprint — 2 Hari</div>
+      <div class="hero-badge">MISI AI Marketing Strategy Sprint — 3 Hari</div>
       <h1>Sudah posting, promo, bahkan ikut produk viral, tapi leads masih seret dan sales masih naik-turun? Masalah Anda mungkin bukan kurang gerak—tapi marketing Anda <em>belum punya arah.</em></h1>
-      <p class="hero-sub">MISI AI Marketing Strategy Sprint adalah sprint intensif <strong style="color:rgba(255,255,255,0.9)">2 hari</strong> untuk membantu business owner memperjelas strategi, merapikan offer, dan menyusun action plan 30 hari berbasis AI — agar effort marketing Anda tidak lagi habis di trial and error, tapi bergerak ke hasil yang lebih nyata.</p>
+      <p class="hero-sub">MISI AI Marketing Strategy Sprint adalah sprint intensif <strong style="color:rgba(255,255,255,0.9)">3 hari</strong> untuk membantu business owner memperjelas strategi, merapikan offer, dan menyusun action plan 30 hari berbasis AI — agar effort marketing Anda tidak lagi habis di trial and error, tapi bergerak ke hasil yang lebih nyata.</p>
       <ul class="hero-bullets">
         <li>Cocok untuk owner yang sudah aktif promosi, tapi hasilnya belum stabil</li>
         <li>Fokus pada strategi, offer, dan action plan yang bisa dijalankan</li>
         <li>Bukan kelas umum. Bukan agency. Ini sprint strategi yang kontekstual untuk bisnis Anda</li>
       </ul>
       <div class="hero-cta">
-        <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 2 Hari Saya</a>
+        <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
         <a href="#fit" class="btn-outline btn-lg" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);">Cek Apakah Sprint Ini Cocok untuk Saya</a>
       </div>
     </div>
@@ -1351,7 +1358,7 @@
       <div class="vis-block"><div class="vis-dot"></div><div class="vis-text"><strong>Iklan jalan terus</strong>leads tidak stabil</div></div>
       <div class="vis-block"><div class="vis-dot"></div><div class="vis-text"><strong>Ikut tren viral</strong>banyak effort, hasil sesaat</div></div>
       <div class="vis-arrow">↓</div>
-      <div class="vis-label" style="color:rgba(61,206,106,0.7);margin-top:4px">After MISI Sprint — 2 Hari</div>
+      <div class="vis-label" style="color:rgba(61,206,106,0.7);margin-top:4px">After MISI Sprint — 3 Hari</div>
       <div class="vis-block active"><div class="vis-dot teal"></div><div class="vis-text"><strong style="color:rgba(255,255,255,0.9)">Strategi yang jelas</strong>tahu apa yang perlu dijalankan</div></div>
       <div class="vis-result">
         <div class="vis-result-label">Output Sprint</div>
@@ -1483,7 +1490,7 @@
         </ul>
       </div>
       <div class="offer-closing">
-        Dalam <strong>2 hari</strong>, kita rapikan fondasi yang paling menentukan apakah marketing Anda akan terus ramai di permukaan, atau mulai bergerak ke leads dan sales yang lebih stabil.
+        Dalam <strong>3 hari</strong>, kita rapikan fondasi yang paling menentukan apakah marketing Anda akan terus ramai di permukaan, atau mulai bergerak ke leads dan sales yang lebih stabil.
       </div>
     </div>
   </div>
@@ -1498,7 +1505,7 @@
       <div class="deliverable-card featured">
         <div class="card-badge basic">Basic Sprint</div>
         <h3>MISI AI Marketing Strategy Sprint</h3>
-        <div class="duration">⏱ Intensif 2 Hari</div>
+        <div class="duration">⏱ Intensif 3 Hari</div>
         <ul class="deliverable-list">
           <li><div class="d-check">✓</div>Draft Context Profile bisnis Anda</li>
           <li><div class="d-check">✓</div>Audience &amp; Pain Point Mapping</li>
@@ -1511,7 +1518,7 @@
       <div class="deliverable-card">
         <div class="card-badge plus">Sprint Plus</div>
         <h3>MISI AI Marketing Strategy Sprint Plus</h3>
-        <div class="duration">⏱ Intensif 2 Hari + Pendampingan Awal</div>
+        <div class="duration">⏱ Intensif 3 Hari + Pendampingan Awal</div>
         <p style="font-size:13.5px;color:var(--text-muted);margin-bottom:16px">Semua deliverable Basic Sprint, plus:</p>
         <ul class="deliverable-list">
           <li><div class="d-check lime-bg">+</div>Implementation Priority Map</li>
@@ -1522,7 +1529,7 @@
       </div>
     </div>
     <div class="mid-cta">
-      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 2 Hari Saya</a>
+      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
     </div>
   </div>
 </section>
@@ -1543,7 +1550,7 @@
         <div class="popular-tag">Mulai Di Sini</div>
         <div class="pricing-tier">Basic Sprint</div>
         <div class="pricing-name">AI Marketing Strategy Sprint</div>
-        <div class="pricing-tagline">Intensif 2 Hari — Strategi &amp; Action Plan</div>
+        <div class="pricing-tagline">Intensif 3 Hari — Strategi &amp; Action Plan</div>
         <div class="pricing-price">Rp3.500.000 <span>/ sprint</span></div>
         <div class="pricing-note">Investasi sekali untuk strategi yang bertahan 30+ hari ke depan</div>
         <hr class="pricing-divider">
@@ -1553,12 +1560,12 @@
           <li>Tahu apa yang harus dijalankan dalam 30 hari ke depan</li>
           <li>Semua 6 core deliverables termasuk</li>
         </ul>
-        <a href="#cta" class="btn-primary" style="width:100%;text-align:center;display:block">Saya Mau Sprint 2 Hari Saya</a>
+        <a href="#cta" class="btn-primary" style="width:100%;text-align:center;display:block">Saya Mau Sprint 3 Hari Saya</a>
       </div>
       <div class="pricing-card">
         <div class="pricing-tier">Sprint Plus</div>
         <div class="pricing-name">AI Marketing Strategy Sprint Plus</div>
-        <div class="pricing-tagline">Intensif 2 Hari + Pendampingan Awal Implementasi</div>
+        <div class="pricing-tagline">Intensif 3 Hari + Pendampingan Awal Implementasi</div>
         <div class="pricing-price">Mulai <span style="font-size:22px;color:white;font-weight:700">Rp7.500.000</span></div>
         <div class="pricing-note">Harga disesuaikan dengan kebutuhan bisnis Anda</div>
         <hr class="pricing-divider">
@@ -1623,7 +1630,7 @@
       <div class="process-step">
         <div class="step-num active">3</div>
         <div class="step-title">Sprint Session</div>
-        <div class="step-desc">Sesi intensif 2 hari untuk membangun kerangka strategi yang jelas</div>
+        <div class="step-desc">Sesi intensif 3 hari untuk membangun kerangka strategi yang jelas</div>
       </div>
       <div class="process-step">
         <div class="step-num active">4</div>
@@ -1688,7 +1695,7 @@
       </tbody>
     </table>
     <div class="mid-cta">
-      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 2 Hari Saya</a>
+      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
     </div>
   </div>
 </section>
@@ -1728,7 +1735,7 @@
         <div class="placeholder-note">* Testimonial placeholder — akan diisi setelah sprint pertama selesai</div>
       </div>
       <div class="testimonial-card">
-        <div class="testimonial-text">Baru 2 hari, tapi saya sudah punya action plan yang lebih jelas dari 6 bulan terakhir. MISI tidak hanya kasih strategi, tapi bantu saya mengerti kenapa strategi itu penting.</div>
+        <div class="testimonial-text">Baru 3 hari, tapi saya sudah punya action plan yang lebih jelas dari 6 bulan terakhir. MISI tidak hanya kasih strategi, tapi bantu saya mengerti kenapa strategi itu penting.</div>
         <div class="testimonial-author">Founder, Bandung</div>
         <div class="testimonial-role">Jasa &amp; Konsultasi</div>
         <div class="placeholder-note">* Testimonial placeholder — akan diisi setelah sprint pertama selesai</div>
@@ -1803,7 +1810,7 @@
           Saya ingin hasil cepat. Kenapa saya harus mulai dari strategi dulu?
           <span class="faq-chevron">+</span>
         </button>
-        <div class="faq-answer">Justru karena Anda ingin hasil cepat, Anda perlu strategi yang jelas. Bergerak cepat tanpa arah adalah cara paling efisien untuk membuang waktu dan uang. Sprint 2 hari adalah investasi terkecil yang bisa memberikan dampak terbesar pada efektivitas marketing Anda ke depannya.</div>
+        <div class="faq-answer">Justru karena Anda ingin hasil cepat, Anda perlu strategi yang jelas. Bergerak cepat tanpa arah adalah cara paling efisien untuk membuang waktu dan uang. Sprint 3 hari adalah investasi terkecil yang bisa memberikan dampak terbesar pada efektivitas marketing Anda ke depannya.</div>
       </div>
 
       <div class="faq-item">
@@ -1827,12 +1834,12 @@
           Apakah ini cocok untuk saya kalau saya suka bergerak cepat dan ingin lihat hasil?
           <span class="faq-chevron">+</span>
         </button>
-        <div class="faq-answer">Sprint 2 hari ini justru dirancang untuk orang yang ingin bergerak cepat tapi dengan arah yang benar. Di akhir sprint, Anda langsung punya Action Plan 30 hari yang bisa segera dijalankan. Ini bukan proses yang lambat — ini adalah pemadatan proses strategi yang biasanya memakan waktu berbulan-bulan.</div>
+        <div class="faq-answer">Sprint 3 hari ini justru dirancang untuk orang yang ingin bergerak cepat tapi dengan arah yang benar. Di akhir sprint, Anda langsung punya Action Plan 30 hari yang bisa segera dijalankan. Ini bukan proses yang lambat — ini adalah pemadatan proses strategi yang biasanya memakan waktu berbulan-bulan.</div>
       </div>
 
     </div>
     <div class="faq-cta-row">
-      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 2 Hari Saya</a>
+      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
       <a href="#cta" class="btn-outline btn-lg">Diskusikan Kondisi Bisnis Saya</a>
     </div>
   </div>
@@ -1843,9 +1850,9 @@
   <div class="final-cta-inner">
     <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(61,206,106,0.1);border:1px solid rgba(61,206,106,0.2);color:var(--lime);font-size:11.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:32px">Sprint Tersedia — Tempat Terbatas</div>
     <h2>Kalau Anda sudah capek promosi tanpa arah, mungkin yang Anda butuhkan sekarang bukan ide baru—tapi <em style="font-style:normal;color:var(--lime)">strategi yang lebih jelas.</em></h2>
-    <p>Dalam 2 hari, MISI membantu Anda melihat apa yang sebenarnya perlu dibenahi di marketing Anda, lalu mengubahnya menjadi strategi, offer, dan action plan yang lebih mungkin menghasilkan leads dan penjualan.</p>
+    <p>Dalam 3 hari, MISI membantu Anda melihat apa yang sebenarnya perlu dibenahi di marketing Anda, lalu mengubahnya menjadi strategi, offer, dan action plan yang lebih mungkin menghasilkan leads dan penjualan.</p>
     <div class="final-cta-btns">
-      <a href="https://wa.me/628xxxxxxxxxx?text=Halo+MISI%2C+saya+ingin+tahu+lebih+lanjut+tentang+AI+Marketing+Strategy+Sprint" class="btn-primary btn-lg">Saya Mau Sprint 2 Hari Saya</a>
+      <a href="https://wa.me/628xxxxxxxxxx?text=Halo+MISI%2C+saya+ingin+tahu+lebih+lanjut+tentang+AI+Marketing+Strategy+Sprint" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
       <a href="https://wa.me/628xxxxxxxxxx?text=Halo+MISI%2C+saya+ingin+diskusikan+kondisi+bisnis+saya" class="btn-outline btn-lg" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8)">Diskusikan Kondisi Bisnis Saya</a>
     </div>
     <p class="reinforcement">Mulai dari strategi yang lebih jelas, sebelum Anda membuang lebih banyak waktu, energi, dan margin di trial and error berikutnya.</p>
@@ -1857,8 +1864,10 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <!-- Logo minimal text version for footer -->
-        <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:28px;color:white;letter-spacing:-1px;margin-bottom:10px">MIS<span style="color:#3dce6a">i</span></div>
+        <!-- MISI final logo asset -->
+        <div class="footer-logo-wrap">
+          <img src="misi-logo-final.png" alt="MISI logo">
+        </div>
         <div class="footer-descriptor">Advisory, Mentoring &amp; Training for Business Owners</div>
         <div class="footer-social">
           <a href="#" class="social-btn" title="WhatsApp">📱</a>
