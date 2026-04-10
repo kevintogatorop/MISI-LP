@@ -964,4 +964,979 @@
   .step-num.active {
     background: var(--teal);
     color: var(--white);
-    border-color: var(--
+    border-color: var(--teal);
+  }
+  .step-num.inactive {
+    background: var(--white);
+    color: var(--text-muted);
+    border-color: var(--mid-gray);
+  }
+  .step-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+  .step-desc {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+  .step-optional {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: var(--teal-muted);
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-top: 6px;
+  }
+
+  /* ─── WHY MISI ─── */
+  .why-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 48px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--mid-gray);
+  }
+  .why-table thead tr {
+    background: var(--charcoal);
+  }
+  .why-table th {
+    padding: 18px 24px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+  }
+  .why-table th:nth-child(3) { color: var(--lime); }
+  .why-table td {
+    padding: 16px 24px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--mid-gray);
+    color: var(--text-body);
+    vertical-align: top;
+  }
+  .why-table tr:last-child td { border-bottom: none; }
+  .why-table tr:nth-child(even) td { background: var(--off-white); }
+  .why-table td:nth-child(3) {
+    color: var(--teal-dark);
+    font-weight: 500;
+  }
+  .cell-no { color: var(--text-light) !important; font-weight: 300 !important; }
+
+  /* ─── TRUST ─── */
+  .trust-certs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 48px 0 56px;
+  }
+  .trust-cert {
+    background: var(--white);
+    border: 1px solid var(--mid-gray);
+    border-radius: var(--radius);
+    padding: 22px 18px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+  .cert-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .cert-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-bottom: 6px;
+  }
+  .cert-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .testimonial-card {
+    background: var(--white);
+    border: 1px solid var(--mid-gray);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+  .testimonial-card::before {
+    content: '"';
+    font-family: 'Inter', sans-serif;
+    font-size: 56px;
+    color: var(--teal-muted);
+    position: absolute;
+    top: 8px; left: 20px;
+    line-height: 1;
+  }
+  .testimonial-text {
+    font-size: 14px;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    padding-top: 24px;
+    font-style: italic;
+  }
+  .testimonial-author {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--charcoal);
+  }
+  .testimonial-role {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .placeholder-note {
+    font-size: 11px;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 6px;
+  }
+
+  /* ─── FAQ ─── */
+  .faq-list {
+    margin-top: 48px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--mid-gray);
+  }
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 22px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--charcoal);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    line-height: 1.5;
+  }
+  .faq-question:hover { color: var(--teal); }
+  .faq-chevron {
+    font-size: 18px;
+    color: var(--teal);
+    flex-shrink: 0;
+    transition: transform 0.25s;
+  }
+  .faq-item.open .faq-chevron { transform: rotate(45deg); }
+  .faq-answer {
+    display: none;
+    font-size: 14.5px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    padding-bottom: 22px;
+    padding-right: 40px;
+  }
+  .faq-item.open .faq-answer { display: block; }
+  .faq-cta-row {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 48px;
+  }
+
+  /* ─── FINAL CTA ─── */
+  .final-cta {
+    background: var(--charcoal);
+    padding: 96px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(26,95,122,0.25) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .final-cta-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .final-cta h2 {
+    color: var(--white);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+  .final-cta p {
+    color: rgba(255,255,255,0.6);
+    font-size: 15.5px;
+    line-height: 1.75;
+    margin-bottom: 40px;
+  }
+  .final-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+  .reinforcement {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.35);
+    font-style: italic;
+    line-height: 1.65;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #111111;
+    padding: 56px 40px 32px;
+    color: rgba(255,255,255,0.4);
+  }
+  .footer-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  .footer-descriptor {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 240px;
+  }
+  .footer-social {
+    display: flex;
+    gap: 8px;
+  }
+  .social-btn {
+    width: 34px; height: 34px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.2s;
+  }
+  .social-btn:hover { background: var(--teal); border-color: var(--teal); color: var(--white); }
+  .footer-col h4 {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+  }
+  .footer-col a {
+    display: block;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: rgba(255,255,255,0.75); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.2);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    section { padding: 64px 24px; }
+    nav { padding: 0 24px; }
+    .container { padding: 0 24px; }
+    .hero { padding: 64px 24px 56px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+    .hero-visual { display: none; }
+    .problem-grid, .reframe-cols, .misi-cols, .offer-grid, .deliverables-grid,
+    .who-grid, .pricing-grid, .footer-top { grid-template-columns: 1fr; gap: 32px; }
+    .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .process-steps::after { display: none; }
+    .cost-concern { grid-template-columns: 1fr 1fr; }
+    .trust-certs { grid-template-columns: 1fr 1fr; }
+    .testimonial-grid { grid-template-columns: 1fr; }
+    .nav-cta { display: none; }
+    .final-cta { padding: 64px 24px; }
+    footer { padding: 48px 24px 24px; }
+    .footer-top { grid-template-columns: 1fr; gap: 32px; }
+    .offer-closing { grid-column: 1; }
+    .why-table { font-size: 13px; }
+    .why-table td, .why-table th { padding: 12px 16px; }
+  }
+
+  @media (max-width: 600px) {
+    .process-steps { grid-template-columns: 1fr; }
+    .cost-concern { grid-template-columns: 1fr; }
+    .trust-certs { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 24px; }
+    .section-headline { font-size: 22px; }
+  }
+
+  /* ─── LOGO SVG ─── */
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="misi-logo-final.png" alt="MISI logo">
+      <div class="nav-divider"></div>
+      <div class="nav-descriptor">Advisory, Mentoring &amp; Training for Business Owners</div>
+    </div>
+    <div class="nav-cta">
+      <a href="#pricing" class="btn-ghost btn-sm">Lihat Harga</a>
+      <a href="#cta" class="btn-primary btn-sm">Saya Mau Sprint 3 Hari Saya</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">MISI AI Marketing Strategy Sprint — 3 Hari</div>
+      <h1>Sudah posting, promo, bahkan ikut produk viral, tapi leads masih seret dan sales masih naik-turun? Masalah Anda mungkin bukan kurang gerak—tapi marketing Anda <em>belum punya arah.</em></h1>
+      <p class="hero-sub">MISI AI Marketing Strategy Sprint adalah sprint intensif <strong style="color:rgba(255,255,255,0.9)">3 hari</strong> untuk membantu business owner memperjelas strategi, merapikan offer, dan menyusun action plan 30 hari berbasis AI — agar effort marketing Anda tidak lagi habis di trial and error, tapi bergerak ke hasil yang lebih nyata.</p>
+      <ul class="hero-bullets">
+        <li>Cocok untuk owner yang sudah aktif promosi, tapi hasilnya belum stabil</li>
+        <li>Fokus pada strategi, offer, dan action plan yang bisa dijalankan</li>
+        <li>Bukan kelas umum. Bukan agency. Ini sprint strategi yang kontekstual untuk bisnis Anda</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
+        <a href="#fit" class="btn-outline btn-lg" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);">Cek Apakah Sprint Ini Cocok untuk Saya</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="vis-label">Before Sprint</div>
+      <div class="vis-block"><div class="vis-dot"></div><div class="vis-text"><strong>Posting tiap hari</strong>engagement tidak menentu</div></div>
+      <div class="vis-block"><div class="vis-dot"></div><div class="vis-text"><strong>Iklan jalan terus</strong>leads tidak stabil</div></div>
+      <div class="vis-block"><div class="vis-dot"></div><div class="vis-text"><strong>Ikut tren viral</strong>banyak effort, hasil sesaat</div></div>
+      <div class="vis-arrow">↓</div>
+      <div class="vis-label" style="color:rgba(61,206,106,0.7);margin-top:4px">After MISI Sprint — 3 Hari</div>
+      <div class="vis-block active"><div class="vis-dot teal"></div><div class="vis-text"><strong style="color:rgba(255,255,255,0.9)">Strategi yang jelas</strong>tahu apa yang perlu dijalankan</div></div>
+      <div class="vis-result">
+        <div class="vis-result-label">Output Sprint</div>
+        <div class="vis-result-items">
+          <span class="vis-tag">Target Market</span>
+          <span class="vis-tag">Core Message</span>
+          <span class="vis-tag">Offer Clarity</span>
+          <span class="vis-tag">Action Plan 30 Hari</span>
+          <span class="vis-tag">Channel Priority</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="problem">
+  <div class="section-inner">
+    <div class="section-label">Kenali Masalahnya</div>
+    <h2 class="section-headline">Anda mungkin bukan kurang kerja keras. Anda mungkin cuma terlalu sering bergerak tanpa arah yang jelas.</h2>
+    <div class="problem-grid">
+      <div>
+        <p style="font-size:15px;color:var(--text-muted);margin-bottom:24px;line-height:1.75">Banyak owner yang datang ke MISI sudah sangat aktif. Mereka:</p>
+        <ul class="pain-list">
+          <li><div class="pain-icon">✗</div>Jualan hampir tiap hari</li>
+          <li><div class="pain-icon">✗</div>Terus cari ide promosi baru</li>
+          <li><div class="pain-icon">✗</div>Ikut tren konten atau produk viral</li>
+          <li><div class="pain-icon">✗</div>Perang harga demi cepat closing</li>
+          <li><div class="pain-icon">✗</div>Bikin affiliate content demi komisi cepat</li>
+        </ul>
+        <div class="warning-box">
+          Kalau ini terus dibiarkan, yang habis bukan cuma waktu. <strong>Margin, energi, dan momentum growth Anda juga ikut habis.</strong>
+        </div>
+      </div>
+      <div>
+        <div class="gap-list">
+          <h4>Tapi mereka belum tahu…</h4>
+          <div class="gap-item">Siapa target market yang paling layak difokuskan</div>
+          <div class="gap-item">Offer mana yang paling kuat dijual</div>
+          <div class="gap-item">Pesan apa yang paling bikin orang tertarik</div>
+          <div class="gap-item">Channel mana yang seharusnya diprioritaskan</div>
+          <div class="gap-item">Langkah mana yang paling berdampak untuk leads dan sales</div>
+        </div>
+      </div>
+    </div>
+    <div class="mid-cta">
+      <a href="#cta" class="btn-primary btn-lg">Saya Mau Rapikan Marketing Saya</a>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="section-inner">
+    <div class="section-label">Root Cause</div>
+    <h2 class="section-headline">Banyak owner menjadikan promosi sebagai strategi. Padahal promosi cuma salah satu bagian kecil dari strategi.</h2>
+    <div class="reframe-cols">
+      <div class="reframe-card">
+        <h4 class="red">Pola yang sering terjadi</h4>
+        <ul class="reframe-list">
+          <li>Yang penting posting</li>
+          <li>Yang penting ada traffic</li>
+          <li>Yang penting closing hari ini</li>
+          <li>Yang penting kontennya ramai</li>
+          <li>Yang penting ada produk yang bisa dijual cepat</li>
+        </ul>
+      </div>
+      <div class="reframe-card">
+        <h4 class="teal">Konsekuensinya</h4>
+        <p style="font-size:14.5px;color:var(--text-muted);line-height:1.75">Kalau semua keputusan marketing diambil dari rasa panik, tren, atau insting sesaat, bisnis jadi mudah ikut-ikutan, mudah perang harga, mudah capek, dan sulit tumbuh stabil.</p>
+      </div>
+    </div>
+    <div class="punch-line">
+      <p>Itulah kenapa banyak owner terlihat <strong style="color:white">aktif</strong>, tapi marketingnya masih <strong style="color:white">rapuh</strong>. Sibuk bukan berarti terarah. Ramai bukan berarti bertumbuh.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="section-inner">
+    <div class="section-label light">Solusinya</div>
+    <h2 class="section-headline white">MISI membantu Anda berhenti asal gerak, lalu mulai membangun arah marketing yang lebih jelas.</h2>
+    <div class="misi-cols">
+      <div>
+        <p style="color:rgba(255,255,255,0.6);font-size:15px;line-height:1.75;margin-bottom:24px">MISI AI Marketing Strategy Sprint dirancang untuk business owner yang sudah aktif jualan, sudah cukup banyak bergerak, tapi mulai sadar bahwa growth tidak bisa terus dibangun dari trial and error.</p>
+        <ul class="misi-check-list">
+          <li><div class="check-icon">✓</div>Melihat bisnis lebih jernih dari luar</li>
+          <li><div class="check-icon">✓</div>Merapikan offer yang benar-benar kuat</li>
+          <li><div class="check-icon">✓</div>Menajamkan pesan yang tepat sasaran</li>
+          <li><div class="check-icon">✓</div>Memilih channel dengan lebih masuk akal</li>
+          <li><div class="check-icon">✓</div>Menyusun langkah 30 hari yang lebih mungkin menghasilkan leads dan penjualan</li>
+        </ul>
+        <div class="brand-promise"><strong>Pendampingan yang bisa diandalkan. Hasil yang melampaui ekspektasi.</strong></div>
+      </div>
+      <div class="misi-sidebar">
+        <div class="sidebar-label">Sprint ini untuk owner seperti ini</div>
+        <div class="owner-check"><div class="dot"></div>Bisnis sudah jalan, tapi marketing belum rapi</div>
+        <div class="owner-check"><div class="dot"></div>Sudah aktif jualan dan promosi</div>
+        <div class="owner-check"><div class="dot"></div>Ingin growth di leads dan sales</div>
+        <div class="owner-check"><div class="dot"></div>Ingin pakai AI secara relevan dan terarah</div>
+        <div class="owner-check"><div class="dot"></div>Siap action, tapi butuh arah yang lebih jelas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="section-inner">
+    <div class="section-label">Apa Yang Anda Beli</div>
+    <h2 class="section-headline">Apa yang sebenarnya Anda beli dari Sprint ini?</h2>
+    <div class="offer-grid">
+      <div>
+        <p style="font-size:15px;color:var(--text-muted);margin-bottom:24px;line-height:1.75">Anda tidak sedang membeli:</p>
+        <ul class="not-buying">
+          <li>Kelas marketing biasa</li>
+          <li>Motivasi atau inspirasi sesaat</li>
+          <li>Template copy-paste tanpa konteks</li>
+        </ul>
+      </div>
+      <div class="buying-card">
+        <h4>Anda sedang membeli →</h4>
+        <ul class="buying-list">
+          <li>Kejelasan strategi untuk bisnis Anda</li>
+          <li>Kejelasan offer yang benar-benar kuat</li>
+          <li>Kejelasan prioritas langkah ke depan</li>
+          <li>Action plan yang membuat effort marketing Anda lebih terarah</li>
+        </ul>
+      </div>
+      <div class="offer-closing">
+        Dalam <strong>3 hari</strong>, kita rapikan fondasi yang paling menentukan apakah marketing Anda akan terus ramai di permukaan, atau mulai bergerak ke leads dan sales yang lebih stabil.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="section-inner">
+    <div class="section-label">Output Sprint</div>
+    <h2 class="section-headline">Setelah Sprint selesai, Anda tidak pulang dengan ide. Anda pulang dengan peta kerja.</h2>
+    <div class="deliverables-grid">
+      <div class="deliverable-card featured">
+        <div class="card-badge basic">Basic Sprint</div>
+        <h3>MISI AI Marketing Strategy Sprint</h3>
+        <div class="duration">⏱ Intensif 3 Hari</div>
+        <ul class="deliverable-list">
+          <li><div class="d-check">✓</div>Draft Context Profile bisnis Anda</li>
+          <li><div class="d-check">✓</div>Audience &amp; Pain Point Mapping</li>
+          <li><div class="d-check">✓</div>Core Message yang lebih tajam</li>
+          <li><div class="d-check">✓</div>Offer Clarification</li>
+          <li><div class="d-check">✓</div>Basic Channel Direction</li>
+          <li><div class="d-check">✓</div>Action Plan 30 Hari</li>
+        </ul>
+      </div>
+      <div class="deliverable-card">
+        <div class="card-badge plus">Sprint Plus</div>
+        <h3>MISI AI Marketing Strategy Sprint Plus</h3>
+        <div class="duration">⏱ Intensif 3 Hari + Pendampingan Awal</div>
+        <p style="font-size:13.5px;color:var(--text-muted);margin-bottom:16px">Semua deliverable Basic Sprint, plus:</p>
+        <ul class="deliverable-list">
+          <li><div class="d-check lime-bg">+</div>Implementation Priority Map</li>
+          <li><div class="d-check lime-bg">+</div>Review awal execution readiness</li>
+          <li><div class="d-check lime-bg">+</div>Feedback iteratif untuk langkah awal</li>
+          <li><div class="d-check lime-bg">+</div>Rekomendasi next step ke mentoring lanjutan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mid-cta">
+      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="pricing">
+  <div class="section-inner">
+    <div class="section-label light">Investasi</div>
+    <h2 class="section-headline white">Bukan biaya untuk "diajarin". Ini investment untuk berhenti buang waktu di trial and error marketing.</h2>
+    <div class="cost-concern">
+      <div class="cost-item">Konten jalan, tapi tidak tahu mana yang berdampak</div>
+      <div class="cost-item">Promosi jalan, tapi leads tidak stabil</div>
+      <div class="cost-item">Effort besar, tapi hasil sulit diprediksi</div>
+      <div class="cost-item">AI dicoba, tapi belum membuat keputusan lebih tajam</div>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card featured">
+        <div class="popular-tag">Mulai Di Sini</div>
+        <div class="pricing-tier">Basic Sprint</div>
+        <div class="pricing-name">AI Marketing Strategy Sprint</div>
+        <div class="pricing-tagline">Intensif 3 Hari — Strategi &amp; Action Plan</div>
+        <div class="pricing-price">Rp3.500.000 <span>/ sprint</span></div>
+        <div class="pricing-note">Investasi sekali untuk strategi yang bertahan 30+ hari ke depan</div>
+        <hr class="pricing-divider">
+        <ul class="pricing-features">
+          <li>Punya arah strategi yang lebih jelas</li>
+          <li>Merapikan offer agar lebih mudah dijual</li>
+          <li>Tahu apa yang harus dijalankan dalam 30 hari ke depan</li>
+          <li>Semua 6 core deliverables termasuk</li>
+        </ul>
+        <a href="#cta" class="btn-primary" style="width:100%;text-align:center;display:block">Saya Mau Sprint 3 Hari Saya</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-tier">Sprint Plus</div>
+        <div class="pricing-name">AI Marketing Strategy Sprint Plus</div>
+        <div class="pricing-tagline">Intensif 3 Hari + Pendampingan Awal Implementasi</div>
+        <div class="pricing-price">Mulai <span style="font-size:22px;color:white;font-weight:700">Rp7.500.000</span></div>
+        <div class="pricing-note">Harga disesuaikan dengan kebutuhan bisnis Anda</div>
+        <hr class="pricing-divider">
+        <ul class="pricing-features">
+          <li>Tidak berhenti di strategi saja</li>
+          <li>Punya arahan awal saat mulai implementasi</li>
+          <li>Mendapat review dan koreksi awal</li>
+          <li>Semua Basic Sprint deliverables + 4 tambahan</li>
+        </ul>
+        <a href="#cta" class="btn-outline" style="width:100%;text-align:center;display:block;border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8)">Diskusikan Sprint Plus untuk Bisnis Saya</a>
+      </div>
+    </div>
+    <div class="bridge-line">Belum yakin pilih Basic atau Plus? <a href="#fit">Cek Apakah Sprint Ini Cocok untuk Saya</a></div>
+  </div>
+</section>
+
+<section class="alt" id="fit">
+  <div class="section-inner">
+    <div class="section-label">Untuk Siapa</div>
+    <h2 class="section-headline">Sprint ini paling cocok untuk owner seperti ini</h2>
+    <div class="who-grid">
+      <div class="who-card fit">
+        <h3>✓ Cocok untuk Anda jika…</h3>
+        <ul class="who-list">
+          <li><span class="who-icon-fit">✓</span>Bisnis sudah jalan, tapi marketing belum rapi</li>
+          <li><span class="who-icon-fit">✓</span>Sudah aktif jualan dan promosi</li>
+          <li><span class="who-icon-fit">✓</span>Ingin growth di leads dan sales, bukan cuma ramai promosi</li>
+          <li><span class="who-icon-fit">✓</span>Ingin pakai AI secara relevan</li>
+          <li><span class="who-icon-fit">✓</span>Siap action, tapi butuh arah yang lebih jelas</li>
+        </ul>
+      </div>
+      <div class="who-card notfit">
+        <h3>✗ Mungkin bukan untuk Anda jika…</h3>
+        <ul class="who-list">
+          <li><span class="who-icon-no">✗</span>Hanya cari template cepat tanpa proses</li>
+          <li><span class="who-icon-no">✗</span>Ingin full done-for-you dengan harga sangat murah</li>
+          <li><span class="who-icon-no">✗</span>Belum siap menjalankan action plan sama sekali</li>
+          <li><span class="who-icon-no">✗</span>Ingin hasil instan tanpa menata fondasi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="section-inner">
+    <div class="section-label">Cara Kerja</div>
+    <h2 class="section-headline centered">Bagaimana Sprint ini berjalan</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num active">1</div>
+        <div class="step-title">Diagnosis Awal</div>
+        <div class="step-desc">Pemetaan kondisi bisnis, marketing saat ini, dan gap paling kritis</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num active">2</div>
+        <div class="step-title">Strategy Mapping</div>
+        <div class="step-desc">Memetakan target market, offer, dan pesan yang paling relevan</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num active">3</div>
+        <div class="step-title">Sprint Session</div>
+        <div class="step-desc">Sesi intensif 3 hari untuk membangun kerangka strategi yang jelas</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num active">4</div>
+        <div class="step-title">Action Plan</div>
+        <div class="step-desc">Menyusun prioritas langkah 30 hari yang bisa langsung dijalankan</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num inactive">5</div>
+        <div class="step-title">Optional Review</div>
+        <div class="step-desc">Review execution readiness dan feedback iteratif awal</div>
+        <div class="step-optional">Sprint Plus Only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="section-inner">
+    <div class="section-label">Perbedaan MISI</div>
+    <h2 class="section-headline">Kenapa MISI berbeda dari kelas marketing biasa atau jasa eksekusi?</h2>
+    <table class="why-table">
+      <thead>
+        <tr>
+          <th>Aspek</th>
+          <th>Kelas Marketing Biasa</th>
+          <th>MISI AI Strategy Sprint</th>
+          <th>Jasa Eksekusi (Agency)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Fokus</strong></td>
+          <td class="cell-no">Materi generik untuk semua orang</td>
+          <td>Strategi kontekstual untuk bisnis Anda</td>
+          <td class="cell-no">Langsung eksekusi tanpa kejelasan</td>
+        </tr>
+        <tr>
+          <td><strong>Pendekatan</strong></td>
+          <td class="cell-no">Satu arah, teori</td>
+          <td>Advisory + Mentoring + Training</td>
+          <td class="cell-no">Done-for-you tanpa transfer ilmu</td>
+        </tr>
+        <tr>
+          <td><strong>Penggunaan AI</strong></td>
+          <td class="cell-no">Sekadar membuat konten</td>
+          <td>Memperjelas strategi dan keputusan</td>
+          <td class="cell-no">Tergantung tool pilihan agency</td>
+        </tr>
+        <tr>
+          <td><strong>Output</strong></td>
+          <td class="cell-no">Materi atau sertifikat</td>
+          <td>Action Plan 30 hari yang bisa dijalankan</td>
+          <td class="cell-no">Konten atau campaign</td>
+        </tr>
+        <tr>
+          <td><strong>Untuk Siapa</strong></td>
+          <td class="cell-no">Pemula umum</td>
+          <td>Owner yang sudah aktif bergerak</td>
+          <td class="cell-no">Bisnis dengan budget besar</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="mid-cta">
+      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="section-inner">
+    <div class="section-label">Mengapa Percaya MISI</div>
+    <h2 class="section-headline">Anda tidak butuh insight yang terdengar pintar. Anda butuh arah yang bisa dipakai.</h2>
+    <div class="trust-certs">
+      <div class="trust-cert">
+        <div class="cert-icon">🎓</div>
+        <div class="cert-title">BNSP Certified Trainer Lv. 4</div>
+        <div class="cert-desc">Sertifikasi instruktur nasional dari Badan Nasional Sertifikasi Profesi</div>
+      </div>
+      <div class="trust-cert">
+        <div class="cert-icon">📋</div>
+        <div class="cert-title">IIBA &amp; CAPM Certified</div>
+        <div class="cert-desc">Sertifikasi internasional di bidang analisis bisnis dan manajemen proyek</div>
+      </div>
+      <div class="trust-cert">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-title">AI Marketing Strategist</div>
+        <div class="cert-desc">Tersertifikasi sebagai AI Marketing Strategist dengan framework praktis</div>
+      </div>
+      <div class="trust-cert">
+        <div class="cert-icon">💼</div>
+        <div class="cert-title">Pengalaman Mendampingi Owner</div>
+        <div class="cert-desc">Track record mendampingi business owner dan pemimpin organisasi</div>
+      </div>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-text">Sprint ini benar-benar membantu saya melihat bisnis dari sudut yang berbeda. Selama ini saya terlalu sibuk posting, tapi ternyata offer saya belum jelas sama sekali.</div>
+        <div class="testimonial-author">Business Owner, Jakarta</div>
+        <div class="testimonial-role">F&amp;B / Kuliner</div>
+        <div class="placeholder-note">* Testimonial placeholder — akan diisi setelah sprint pertama selesai</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-text">Baru 3 hari, tapi saya sudah punya action plan yang lebih jelas dari 6 bulan terakhir. MISI tidak hanya kasih strategi, tapi bantu saya mengerti kenapa strategi itu penting.</div>
+        <div class="testimonial-author">Founder, Bandung</div>
+        <div class="testimonial-role">Jasa &amp; Konsultasi</div>
+        <div class="placeholder-note">* Testimonial placeholder — akan diisi setelah sprint pertama selesai</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-text">Saya sudah ikut banyak kelas marketing, tapi baru di MISI saya benar-benar tahu langkah mana yang harus saya ambil duluan untuk bisnis saya yang spesifik.</div>
+        <div class="testimonial-author">CEO, Surabaya</div>
+        <div class="testimonial-role">Retail &amp; E-commerce</div>
+        <div class="placeholder-note">* Testimonial placeholder — akan diisi setelah sprint pertama selesai</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white" id="artikel">
+  <div class="section-inner">
+    <div class="section-label">Insight & Strategi</div>
+    <h2 class="section-headline">Baca Artikel Terbaru Kami</h2>
+    
+    <div class="deliverables-grid">
+      <div class="deliverable-card">
+        <div class="card-badge basic">Marketing Strategy</div>
+        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;">Sudah Rajin Promosi tapi Leads Belum Stabil? Ini Akar Masalahnya</h3>
+        <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.6;">Cari tahu penyebab leads dan penjualan Anda tidak stabil meski sudah rajin promosi. Temukan cara merapikan strategi marketing agar lebih terarah.</p>
+        <a href="artikel-1.html" class="btn-outline btn-sm">Baca Artikel &rarr;</a>
+      </div>
+      <div class="deliverable-card">
+        <div class="card-badge plus">Strategy & Offer</div>
+        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;">Promosi Ramai tapi Jarang Closing? Saatnya Evaluasi Offer Anda</h3>
+        <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.6;">Temukan alasan mengapa promosi Anda ramai namun minim penjualan. Pelajari cara membuat offer yang kuat dan bukan sekadar perang diskon.</p>
+        <a href="artikel-2.html" class="btn-outline btn-sm">Baca Artikel &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="section-inner">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-headline centered">Sebelum Anda memutuskan, mungkin ini yang sedang Anda pikirkan</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Saya takut ini cuma sesi strategi yang ujung-ujungnya berisi teori. Apa bedanya dengan konsultasi biasa?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Sprint MISI bukan sesi tanya jawab atau presentasi materi. Ini adalah proses terstruktur yang menghasilkan dokumen nyata: Context Profile, Audience Mapping, Core Message, Offer Clarity, dan Action Plan 30 hari. Anda pulang bukan dengan catatan, tapi dengan peta kerja yang bisa langsung dipakai.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Bisnis saya masih kecil dan masih tahap awal. Apakah ini terlalu cepat atau terlalu berat untuk saya?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Sprint ini paling tepat untuk owner yang sudah mulai berjualan, sudah pernah promosi, dan mulai merasakan bahwa hasilnya tidak konsisten. Jika Anda sudah ada aktivitas penjualan — meski kecil — Sprint ini relevan. Yang belum layak masuk adalah yang benar-benar masih di tahap ide dan belum pernah berjualan sama sekali.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Kalau masalah saya sebenarnya cuma kurang promosi, apakah saya tetap butuh Sprint ini?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Pertanyaan yang bagus. Banyak owner yang merasa "kurang promosi" ternyata setelah didiagnosis, masalahnya bukan di volume promosi — tapi di kejelasan offer dan target. Sprint ini justru membantu Anda memastikan bahwa promosi yang Anda jalankan menyasar orang yang tepat dengan pesan yang tepat.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Saya sudah pernah ikut kelas marketing atau belajar AI. Kenapa saya masih perlu Sprint ini?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Kelas marketing mengajarkan konsep. Sprint ini mengaplikasikan konsep tersebut ke bisnis Anda secara spesifik. Banyak owner yang sudah paham teorinya tapi masih bingung "mana yang harus saya jalankan duluan untuk bisnis saya?" — itulah yang Sprint ini jawab.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Saya takut hasilnya cuma dokumen yang nanti tidak sempat saya jalankan.
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Kekhawatiran yang valid. Itulah kenapa Action Plan yang dihasilkan Sprint ini dirancang untuk realistis dan terprioritaskan — bukan daftar panjang yang membingungkan. Action Plan 30 hari MISI fokus pada langkah paling berdampak, bukan semua langkah yang mungkin dilakukan.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Apakah Sprint ini akan langsung menaikkan leads dan sales saya?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Sprint ini tidak membuat leads dan sales naik secara otomatis — tidak ada produk yang bisa melakukan itu secara instan. Yang Sprint ini lakukan adalah memberikan Anda fondasi yang benar: strategi yang jelas, offer yang lebih kuat, dan action plan yang lebih terarah — sehingga effort marketing Anda berikutnya lebih mungkin menghasilkan leads dan sales yang lebih stabil.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Saya ingin hasil cepat. Kenapa saya harus mulai dari strategi dulu?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Justru karena Anda ingin hasil cepat, Anda perlu strategi yang jelas. Bergerak cepat tanpa arah adalah cara paling efisien untuk membuang waktu dan uang. Sprint 3 hari adalah investasi terkecil yang bisa memberikan dampak terbesar pada efektivitas marketing Anda ke depannya.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Apakah saya harus sudah paham AI dulu?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Tidak perlu. AI dalam Sprint ini dipakai sebagai alat bantu untuk mempertajam analisis dan mempercepat penyusunan strategi — bukan sebagai materi utama yang perlu dipelajari. Anda tidak perlu memahami cara kerja AI; Anda hanya perlu terbuka terhadap prosesnya.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Kalau saya maunya langsung dikerjakan semua, apakah MISI bisa?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">MISI bukan agency eksekusi. Jika Anda mencari tim yang mengerjakan semua konten dan iklan Anda, MISI bukan pilihan yang tepat. Tapi jika Anda ingin tahu apa yang seharusnya dikerjakan dan bagaimana memprioritaskannya — itulah yang MISI berikan.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Apakah ini cocok untuk saya kalau saya suka bergerak cepat dan ingin lihat hasil?
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-answer">Sprint 3 hari ini justru dirancang untuk orang yang ingin bergerak cepat tapi dengan arah yang benar. Di akhir sprint, Anda langsung punya Action Plan 30 hari yang bisa segera dijalankan. Ini bukan proses yang lambat — ini adalah pemadatan proses strategi yang biasanya memakan waktu berbulan-bulan.</div>
+      </div>
+
+    </div>
+    <div class="faq-cta-row">
+      <a href="#cta" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
+      <a href="#cta" class="btn-outline btn-lg">Diskusikan Kondisi Bisnis Saya</a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" id="cta">
+  <div class="final-cta-inner">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(61,206,106,0.1);border:1px solid rgba(61,206,106,0.2);color:var(--lime);font-size:11.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:32px">Sprint Tersedia — Tempat Terbatas</div>
+    <h2>Kalau Anda sudah capek promosi tanpa arah, mungkin yang Anda butuhkan sekarang bukan ide baru—tapi <em style="font-style:normal;color:var(--lime)">strategi yang lebih jelas.</em></h2>
+    <p>Dalam 3 hari, MISI membantu Anda melihat apa yang sebenarnya perlu dibenahi di marketing Anda, lalu mengubahnya menjadi strategi, offer, dan action plan yang lebih mungkin menghasilkan leads dan penjualan.</p>
+    <div class="final-cta-btns">
+      <a href="https://wa.me/6287737766127?text=Halo%20MISI%2C%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20AI%20Marketing%20Strategy%20Sprint" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">Saya Mau Sprint 3 Hari Saya</a>
+      <a href="https://wa.me/6287737766127?text=Halo+MISI%2C+saya+ingin+diskusikan+kondisi+bisnis+saya" class="btn-outline btn-lg" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8)">Diskusikan Kondisi Bisnis Saya</a>
+    </div>
+    <p class="reinforcement">Mulai dari strategi yang lebih jelas, sebelum Anda membuang lebih banyak waktu, energi, dan margin di trial and error berikutnya.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="misi-logo-final.png" alt="MISI logo">
+        </div>
+        <div class="footer-descriptor">Advisory, Mentoring &amp; Training for Business Owners</div>
+        <div class="footer-social">
+          <a href="https://wa.me/6287737766127" target="_blank" rel="noopener noreferrer" class="social-btn" title="WhatsApp">📱</a>
+          <a href="https://www.instagram.com/misi.id00?igsh=MTVwbWFpaWxydnJvZw==" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram">📸</a>
+          <a href="https://youtube.com/@misilabtv?si=CcHEAhNTLpuLIpKM" target="_blank" rel="noopener noreferrer" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Program</h4>
+        <a href="#pricing">AI Marketing Strategy Sprint</a>
+        <a href="#pricing">Sprint Plus</a>
+        <a href="#">Mentoring Lanjutan</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <a href="https://wa.me/6287737766127">WhatsApp</a>
+        <a href="mailto:kevin.togatorop@gmail.com">kevin.togatorop@gmail.com</a>
+        <a href="https://www.instagram.com/misi.id00">@misi.id</a>
+        <a href="https://youtube.com/@misilabtv">YouTube MISI Lab</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="#">Tentang MISI</a>
+        <a href="#artikel">Artikel / Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="#">misi.id</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 MISI. Advisory, Mentoring &amp; Training for Business Owners.</span>
+      <span>Clarity over Chaos.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('section').forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(20px)';
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(section);
+  });
+
+  // Nav stays visible
+  document.querySelector('nav').style.opacity = '1';
+  document.querySelector('nav').style.transform = 'none';
+</script>
+
+</body>
+</html>
